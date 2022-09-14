@@ -1560,8 +1560,8 @@ CSID_TG:
 	s_ctrl->sensordata->ois_name = slave_info->ois_name;
 	s_ctrl->sensordata->flash_name = slave_info->flash_name;
 #ifdef CONFIG_MACH_XIAOMI_LAVENDER
-	s_ctrl->sensordata->vendor_id_info = &(slave_info->vendor_id_info);
-	s_ctrl->sensordata->vcm_id_info = &(slave_info->vcm_id_info);
+	s_ctrl->sensordata->vendor_id_info = (slave_info->vendor_id_info);
+	s_ctrl->sensordata->vcm_id_info = (slave_info->vcm_id_info);
 #endif
 	/*
 	 * Update eeporm subdevice Id by input eeprom name
